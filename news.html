@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.html">
+    <link rel="stylesheet" href="css/styleMain.css">
+    <title>Paradox Interactive</title>
+    <link rel="icon" href="Images/Paradox_WhiteLogo.png">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="styleNews">
+    <div class="header">
+        <nav>
+            <img src="Images/Paradox_WhiteLogo.png" alt="">
+            <div class="navbar">
+                <a class="bars" href="main.html">Home</a>
+                <a class="bars" href="news.html">news</a>
+                <div class="bars special">
+                    community mods
+                    <div class="dropDown">
+                        <a href="/myCommunityMods_hoi4.html">Hearts Of Iron IV</a>
+                        <a href="/myCommunityMods_ck2.html">Crusader Kings 2 </a>
+                    </div>
+                </div>
+                <a class="bars" href="aboutUs.html">About us</a>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        $('.special').hover(function() {
+            $('.dropDown').slideToggle(100);
+        });
+    </script>
+
+    <div class="main">
+        <div class="myFavorites">
+            <div class="products">
+                <div class="iframe-container">
+                    <iframe id="youtube_hoi4" class="game_background youtube" src="https://www.youtube.com/embed/dBJAOYiPsa4" allowfullscreen></iframe>
+                    <img id="hoi4_image" class="game_background" src="/Images/news_no-step-back.png" alt="">
+                </div>
+                <div class="info">
+                    <button id="hoi4_watch" class="watch">Watch</button>
+                    <script>
+                        $('#hoi4_watch').on('click', function() {
+                            $('#hoi4_image').hide();
+                            $('#youtube_hoi4').show();
+                            $("#youtube_hoi4")[0].src += "?autoplay=1";
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="products">
+                <div class="iframe-container">
+                    <iframe id="youtube_vic2" class="game_background youtube" src="https://www.youtube.com/embed/siZXs4d5Gqg" allowfullscreen></iframe>
+                    <img id="vic2_image" class="game_background" src="Images/news_vic3.png" alt="">
+                </div>
+                <div class="info">
+                    <button id="vic2_watch" class="watch">Watch</button>
+                    <script>
+                        $('#vic2_watch').on('click', function() {
+                            $('#vic2_image').hide();
+                            $('#youtube_vic2').show();
+                            $("#youtube_vic2")[0].src += "?autoplay=1";
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="products">
+                <div class="iframe-container">
+                    <iframe id="youtube_eu4" class="game_background youtube" src="https://www.youtube.com/embed/zA-n6DXuG8M" allowfullscreen></iframe>
+                    <img id="eu4_image" class="game_background" src="Images/news_eu4.png" alt="">
+                </div>
+                <div class="info">
+                    <button id="eu4_watch" class="watch">Watch</button>
+                    <script>
+                        $('#eu4_watch').on('click', function() {
+                            $('#eu4_image').hide();
+                            $('#youtube_eu4').show();
+                            $("#youtube_eu4")[0].src += "?autoplay=1";
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="products">
+                <div class="iframe-container">
+                    <iframe id="youtube_ck3" class="game_background youtube" src="https://www.youtube.com/embed/cvid3edWqcg" allowfullscreen></iframe>
+                    <img id="ck3_image" class="game_background" src="Images/news_ck3-royal-court.png" alt="">
+                </div>
+                <div class="info">
+                    <button id="ck3_watch" class="watch">Watch</button>
+                    <script>
+                        $('#ck3_watch').on('click', function() {
+                            $('#ck3_image').hide();
+                            $('#youtube_ck3').show();
+                            $("#youtube_ck3")[0].src += "?autoplay=1";
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <h1>Social Media</h1>
+            <ul>
+                <li><img src="Images/Paradox_WhiteLogo.png" alt=""></li>
+                <li>
+                    <a href=""><img src="Images/fb.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="Images/youtube.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="Images/twitter.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contacts footer_links">
+
+            <ul class="games">
+                <h2>Games</h2>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="#">On Sale</a></li>
+            </ul>
+            <ul class="community">
+                <h2>Community</h2>
+                <li><a href="#">Paradox Wiki</a></li>
+                <li><a href="#">Paradox Forum</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <div class="trademark">
+                <p>© Paradox Interactive. Trademarks belong to their respective owners. All rights reserved.</p>
+                <p> VAT included in all prices where applicable. </p>
+            </div>
+        </div>
+
+    </div>
+    <!--footer-->
+
+
+
+</body>
+
+</html>

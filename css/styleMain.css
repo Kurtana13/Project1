@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(76, 76, 76, 255);
+    background-image: url("/Images/main_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(40, 40, 40, 255);
+    height: 80px;
+    z-index: 2;
+}
+
+.header nav {
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header nav img {
+    height: 100%;
+}
+
+.header nav .navbar {
+    width: 100%;
+    display: flex;
+    line-height: 80px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header nav .navbar .bars {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 25%;
+    color: white;
+}
+
+.header nav .navbar .bars .dropDown {
+    background-color: rgb(196, 196, 196);
+    position: absolute;
+    display: none;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.header nav .navbar .bars .dropDown a {
+    font-size: 20px;
+    height: 100%;
+    color: rgba(40, 40, 40, 255);
+    display: block;
+}
+
+.header nav .navbar .bars .dropDown a:hover {
+    background-color: rgba(76, 76, 76, 255);
+    color: rgb(196, 196, 196);
+}
+
+.header nav .navbar .bars:hover {
+    color: rgba(40, 40, 40, 255);
+    background-color: white;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.main .description {
+    width: 99%;
+    margin: auto;
+}
+
+.main .myFavorites {
+    width: 100%;
+    display: flex;
+    padding-top: 8px;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(155, 155, 155, 0.5);
+}
+
+.main .myFavorites .products {
+    width: 49%;
+    position: relative;
+    overflow: hidden;
+    margin: 0.5%;
+}
+
+.main .myFavorites .products .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.main .myFavorites .products .iframe-container .youtube {
+    display: none;
+}
+
+.main .myFavorites .products .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main .myFavorites .products .game_logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+
+.main .myFavorites .products .game_background {
+    width: 100%;
+}
+
+.main .myFavorites .products .info {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main .myFavorites .products .info button {
+    position: relative;
+    width: 20%;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2;
+    border: none;
+    color: lavender;
+    background-color: rgb(71, 71, 71);
+    opacity: 0.9;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main .myFavorites .products .info p {
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    opacity: 0;
+    color: lavender;
+    transition: opacity 0.3s;
+}
+
+.main .myFavorites .products .info button:hover {
+    background-color: lavender;
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+
+.main .myFavorites .products .info button:hover+#ck2_Info {
+    opacity: 0.9;
+}
+
+.main .myFavorites .products .info button:hover+#eu4_Info {
+    opacity: 0.9;
+}
+
+.main .myFavorites .products .info button:hover+#hoi4_Info {
+    opacity: 0.9;
+}
+
+.main .myFavorites .products .info button:hover+#vic2_Info {
+    opacity: 0.9;
+}
+
+.footer {
+    background: rgba(40, 40, 40, 255);
+    width: 100%;
+    position: relative;
+    top: 200px;
+    padding-top: 50px;
+}
+
+.footer .contacts {
+    margin: auto;
+    width: 60%;
+}
+
+.footer .contacts ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .contacts ul li {
+    width: 25%;
+    text-align: center;
+}
+
+.footer .contacts ul li img {
+    width: 30%;
+}
+
+.footer .footer_links {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.footer .footer_links h2 {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    color: rgb(114, 114, 114);
+    margin-bottom: 10px;
+}
+
+.footer .footer_links ul {
+    display: block;
+}
+
+.footer .footer_links ul li {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.footer .footer_links ul li a {
+    display: inline;
+    color: white;
+}
+
+.footer .footer_links ul li a:hover {
+    color: red;
+}
+
+.footer .copyright {
+    background-color: black;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .copyright .trademark {
+    color: white;
+}
+
+.footer .copyright .trademark p {
+    text-align: center;
+}
+
+
+/* news CSS */
+
+#styleNews {
+    background-image: url("/Images/news_background.png");
+}
+
+
+/* styleCommunityMods_hoi4 CSS */
+
+#styleCommunityMods_hoi4 {
+    background-image: url("/Images/kaiserreich_background.png");
+}
+
+#styleCommunityMods_hoi4 .main .description {
+    background-color: rgba(85, 85, 85, 0.7);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#styleCommunityMods_hoi4 .main .description h1 {
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+#styleCommunityMods_hoi4 .main .description p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#styleCommunityMods_hoi4 .main .description #kaiserreich_head {
+    float: right;
+    width: 40%;
+}
+
+
+/* styleCommunityMods_hoi4 CSS  END!!! */
+
+
+/* styleCommunityMods_ck2 CSS */
+
+#styleCommunityMods_ck2 {
+    background-image: url("/Images/gameofthrones_background.png");
+    background-size: cover;
+}
+
+#styleCommunityMods_ck2 .main .description {
+    width: 100%;
+    background-color: rgba(155, 155, 155, 0.7);
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+}
+
+#styleCommunityMods_ck2 .main .description p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#styleCommunityMods_ck2 .main .description img {
+    width: 50%;
+    border-radius: 30px;
+    float: left;
+}
+
+
+/* styleCommunityMods_hoi4 CSS END!!! */
+
+
+/* AboutUS CSS */
+
+#styleAboutUs {
+    background-image: url("/Images/aboutUs_background.png");
+}
+
+#styleAboutUs .main .description {
+    background-color: rgba(85, 85, 85, 0.9);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#styleAboutUs .main .description img {
+    border-radius: 30px;
+    float: left;
+    width: 40%;
+    margin-right: 10px;
+}
+
+#styleAboutUs .main .description p {
+    color: white;
+    font-size: 20px;
+}
+
+#styleAboutUs .main .description h1 {
+    color: rgb(233, 233, 233);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* AboutUS CSS END!!! */
+
+@media screen and (max-width: 1600px) {
+    .header nav {
+        width: 90%;
+    }
+    .header nav .navbar .bars {
+        font-size: 20px;
+    }
+    .main .myFavorites .products .info p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1307px) {
+    .main .myFavorites .products .info button {
+        font-size: 16px;
+    }
+    .main .myFavorites .products .info p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header nav {
+        width: 100%;
+    }
+    .header nav .navbar .bars {
+        font-size: 15px;
+    }
+    .header nav .navbar .bars .dropDown a {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .main {
+        width: 80%;
+    }
+    .main .myFavorites .products .info button {
+        font-size: 16px;
+        width: 27%;
+    }
+    .main .myFavorites .products .info p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main .myFavorites .products .info button {
+        font-size: 13px;
+    }
+    .main .myFavorites .products .info p {
+        font-size: 8.25px;
+    }
+    .footer .contacts {
+        width: 80%;
+    }
+    #styleCommunityMods_hoi4 .main .description h1 {
+        font-size: 20px;
+    }
+    #styleCommunityMods_hoi4 .main .description p {
+        font-size: 15px;
+    }
+    #styleCommunityMods_ck2 .main .description h1 {
+        font-size: 20px;
+    }
+    #styleCommunityMods_ck2 .main .description p {
+        font-size: 15px;
+    }
+    #styleAboutUs .main .description h1 {
+        font-size: 20px;
+    }
+    #styleAboutUs .main .description p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header nav .navbar .bars {
+        font-size: 12px;
+    }
+    .header nav .navbar .bars .dropDown a {
+        font-size: 10px;
+    }
+    .header nav img {
+        height: 50%;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .main {
+        width: 100%;
+    }
+    .main .myFavorites .products .info button {
+        width: 30%;
+        font-size: 15px;
+    }
+    .main .myFavorites .products .info p {
+        font-size: 7px;
+    }
+    .footer .contacts {
+        width: 100%;
+    }
+    .footer .footer_links h2 {
+        font-size: 13px;
+    }
+    .footer .footer_links ul li a {
+        font-size: 11px;
+    }
+    .footer .copyright .trademark p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .header nav .navbar .bars {
+        font-size: 7px;
+    }
+    .header nav .navbar .bars .dropDown a {
+        font-size: 6px;
+    }
+    .header nav img {
+        height: 40%;
+    }
+    h1 {
+        font-size: 10px;
+    }
+    .main .myFavorites .products .info button {
+        font-size: 9px;
+    }
+    .main .myFavorites .products .info p {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main .myFavorites .products .info p {
+        font-size: 5px;
+    }
+    .footer .copyright .trademark p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main .myFavorites .products .info p {
+        font-size: 4px;
+    }
+}
